@@ -22,7 +22,7 @@
         </div>
       </section>
       <header>
-          <div class="header-content">
+          <div class="header-content mobile">
             <div class="logo-actions-container">
               <div class="logo">
                 <img 
@@ -48,6 +48,46 @@
                 </ul>
               </div>
             </nav>
+          </div>
+          <!-- header desktop -->
+          <div class="header-content desktop">
+            <div class="page-sizer">
+              <div class="logo-actions-container">
+                <div class="logo">
+                  <img 
+                  src='../src/assets/images/logo-inline@2x.png' 
+                  srcset="../src/assets/images/logo-inline@2x.png 1000w,../src/assets/images/logo-stack@2x.png 2000w" 
+                  alt=""  
+                  sizes='(min-width: 960px), 100vw 960px'>
+                </div>
+                <nav class="navigation">
+                  <ul>
+                    <li><a href="#">Collection</a></li>
+                    <li><a href="#">Color</a></li>
+                    <li><a href="#">Width</a></li>
+                    <li><a href="#">Fabric</a></li>
+                    <li><a href="#">Pattern</a></li>
+                  </ul>
+                </nav>
+                <div class="actions">
+                  <div class="user-actions">
+                    <a href="#">SIGN IN</a><a href="#">REGISTER</a>
+                  </div>
+                  <div class="cart-container">
+                    <a href="#" class="card-button">
+                      <i class="fas fa-shopping-cart"></i>
+                      <span>Cart</span>
+                      <span class="card-number">0</span>
+                    </a>
+                  </div>
+                  <div class="input-search-container">
+                    <label class="search-bar">
+                      <i class="fas fa-search search-icon"></i>
+                      <input type="text" class="search" placeholder="Search" />
+                    </label>
+                  </div>
+                </div>
+            </div>
           </div>
       </header>
       <div class="hero">
