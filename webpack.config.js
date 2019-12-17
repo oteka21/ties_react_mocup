@@ -16,6 +16,17 @@ const config = {
         exclude: /node_modules/
       },
       {
+        test: /\.(png|jpg|jpeg)$/,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              mimetype: 'image/png'
+            }
+          }
+        ]
+      },
+      {
         test: /\.scss$/,
         use: [
           'style-loader',
@@ -36,6 +47,20 @@ const config = {
         template: require('html-webpack-template'),
         inject: false,
         appMountId: 'app',
+        links: [
+          {
+            rel: 'stylesheet',
+            href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css',
+            integrity: 'sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=',
+            crossorigin: 'anonymous'
+          }
+        ],
+        meta: [
+          {
+            name: 'viewport',
+            content: 'width=device-width, initial-scale=1.0, user-scalable=no'
+          }
+        ]
       })
   ],
   optimization: {

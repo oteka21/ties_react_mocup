@@ -1,26 +1,22 @@
 
-import React,{ useState, useEffect } from "react";
+import React from "react";
+import { Promo } from './Components/Promo'
+import { Header } from './Components/Header'
+import { Hero } from './Components/Hero'
+import { Categories } from './Components/Categories'
+import { History } from './Components/History'
+import { Footer } from './Components/Footer'
+import { tiesList } from './assets/ties-list'
 
 const App = () => {
-  const [data, setData] = useState([])
-  const [loading, setLoading] = useState(false)
-
-  async function LoadData(){
-    setLoading(true)
-    const res = await fetch('https://rickandmortyapi.com/api/character')
-    console.log(res)
-    // fetch('https://rickandmortyapi.com/api/character')
-    // .then(res => {
-    //   setLoading(false)
-    //   console.log(res,loading)
-    // })
-    // console.log(loading)
-  }
-  useEffect( () => {
-    LoadData()
-  }, [])
-
-  return <h1>Hello {name}</h1>;
+  return <div className="container">
+    <Promo />
+    <Header/>
+    <Hero list={tiesList}/>
+    <Categories />
+    <History />
+    <Footer />
+  </div>;
 }
 
 export default App;
