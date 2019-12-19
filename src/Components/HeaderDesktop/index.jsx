@@ -9,7 +9,10 @@ export const HeaderDesktop = () => (
       <div className="logo">
         <img 
         src='../src/assets/images/logo-stack@2x.png' 
-        alt="logo" />
+        alt="logo" className="logo-stack"/>
+        <img 
+        src='../src/assets/images/logo-inline@2x.png' 
+        alt="logo" className="logo-inline mobile"/>
       </div>
       <Nav/>
       <div className="actions">

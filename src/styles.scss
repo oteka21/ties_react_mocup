@@ -194,6 +194,13 @@
     bottom: -3px;
     left: calc((100% - 4px) / 2);
   }
+  .search-input-acor{
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    display: flex;
+    justify-content: center;
+  }
 
   .desktop{
     display: none; 
@@ -239,7 +246,7 @@
 
     .actions{
       width: 40%;
-      padding: 30px 0;
+      padding: 16px 0;
       /* background: red; */
       display: grid;
       grid-template-columns: 40% 60%;
@@ -295,7 +302,7 @@
     .search{
       border: 0;
       padding: 0 6px;
-      width: 100%;
+      width: 91%
     }
 
 
@@ -305,7 +312,7 @@
       align-items: center;
       color: #909090;
       border: 1px solid #D8D8D8;
-      box-shadow: #F4F4F4 0 0 0 4px;
+      // box-shadow: #F4F4F4 0 0 0 4px;
       border-radius: 2px;
       width: 80%;
       height: 30px;
@@ -351,9 +358,9 @@
   .ties-container{
     display: flex;
     width: 100%;
-    max-width: 1000px;
+    max-width: 1100px;
     overflow-x: scroll;
-    
+    scrollbar-width: none;
   }
 
   .ties-container::-webkit-scrollbar {
@@ -367,7 +374,7 @@
 
   .tie{
     /* width: 100px; */
-    margin-right: 12px;
+    margin-right: 35px;
     margin-bottom: 40px;
   }
   .tie a{
@@ -400,11 +407,6 @@
 
     .ties-container{
       justify-content: center;
-    }
-
-    .tie{
-      /* width: 100px; */
-      margin-right: 23px;
     }
 
     .tie a:hover img{
@@ -539,6 +541,10 @@
   font-size: 18px;
 }
 
+.footer-main-item img{
+  width: 100%;
+}
+
 
 
 @media screen and (min-width: 768px){
@@ -623,7 +629,8 @@
 
 .style-guide img{
   width: 50%;
-  height: 120px;
+  // height: 120px;
+  object-fit: cover;
   border-radius: 5px;
 }
 
@@ -632,16 +639,15 @@
   padding: 0 8px;
 }
 
-@media screen and (min-width:768px){
+@media screen and (min-width: 1024px){
   .style-guide img{
     width: 100%;
-    height: 180px;
   }
-  
+
   .style-guide p{
     width: 100%;
     padding: 0 8px;
-  }  
+  }
 }
 
 .footer-sub{
@@ -706,6 +712,10 @@
   /* align-items: space-between; */
 }
 
+.email-phone{
+  width: 100%;
+}
+
 .contact-card *{
   color: #fff;
   width: 100%;
@@ -734,6 +744,9 @@
     margin: 0;
     margin-left: auto;
   }
+  .email-phone{
+    width: 50%;
+  }
 
   .contact-card .button-mobile{
     display: none;
@@ -753,6 +766,14 @@
   margin-top: 30px;
   color: #909090;
   font-size: 12px;
+}
+
+.copyright a{
+  color: #909090;
+}
+
+.copyright a:hover{
+  color: #1781E0;
 }
 
 .next{
@@ -812,6 +833,7 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-top: 20px;
 }
 
@@ -855,4 +877,99 @@
 
 .navigation li:hover .dropdown-content {
   display: block;
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+  .category-item{
+    max-width: 230px;
+  }
+
+  .history{
+    margin: 50px 0;
+  }
+
+  .footer-main-item{
+    max-width: 50%;
+    padding: 30px;
+  }
+
+
+  .history h2 {
+    font-size: 25px;
+  }
+
+  .footer-sub-content{
+    justify-content: space-between;
+  }
+  .footer-list-item{
+    max-width: 160px;
+  }
+
+  .contact-card{
+    margin-left: 0;
+    margin-top: 20px; 
+  }
+
+  .scroll-ties-container{
+    justify-content: space-between;
+  }
+
+  .back,.next{
+    display: block;
+  }
+
+  .logo-actions-container{
+    display: grid;
+    grid-template-columns: 40% auto 30%;
+    grid-template-rows: 50% 50%;
+    height: 160px;
+  }
+
+  .logo-actions-container{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
+  .logo{
+    width: 100%;
+  }
+
+  .navigation{
+    grid-column: 1/-1;
+    grid-row: 2 / -1;
+    border-top: 1px solid rgba(0,0,0,.2);
+    margin: 0;
+  }
+
+  .actions{
+    grid-column: 3 / -1;
+    grid-row: 1 / 2;
+    width: 100%;
+    padding: 16px 0 0 0;
+    /* background: red; */
+    display: grid;
+    grid-gap: 0;
+  }
+
+  .logo-stack{
+    display: none;
+  }
+
+  .logo-inline{
+    display: block;
+  }
+}
+
+
+.input{
+  width: 80%;
+  // margin-bottom: 8px;
+  border: 1px solid #D8D8D8;
+  background: #FFF;
+  border-radius: 2px;
+  box-shadow: #F4F4F4 0 0 0 4px;
+  padding: 7px 8px;
+  font-size: 14px;
+  padding: 15px;
 }

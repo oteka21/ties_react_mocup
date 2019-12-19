@@ -47,12 +47,19 @@ const config = {
         template: require('html-webpack-template'),
         inject: false,
         appMountId: 'app',
+        title: "Skinny ties",
         links: [
           {
             rel: 'stylesheet',
             href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css',
             integrity: 'sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=',
             crossorigin: 'anonymous'
+          },
+          {
+            href: './src/assets/images/logo-stack@2x.png',
+            rel: 'icon',
+            sizes: '32x32',
+            type: 'image/png'
           }
         ],
         meta: [

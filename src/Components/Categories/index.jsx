@@ -10,7 +10,7 @@ export const Categories = () => (
       </a>
       <a href="#" className="category-item">
         <img src="../src/assets/images/solid-satin@1.5x.jpg" alt="" />
-        <h2>Solid satin</h2>
+        <h2>Solid<br />satin</h2>
       </a>
       <a href="#" className="category-item">
         <img src="../src/assets/images/popular@1.5x.jpg" alt="" />

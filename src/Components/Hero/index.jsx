@@ -37,7 +37,7 @@ export const Hero = ({list}) => {
   </ul>
   <div className="scroll-ties-container">
     <button className="back" onClick={handleback}/>
-    <h2>Start dressing better</h2>
+    <h2>Start dressing better.</h2>
     <button className="next" onClick={handleNext}/>
   </div>
 </div>

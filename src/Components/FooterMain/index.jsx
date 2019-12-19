@@ -6,7 +6,7 @@ export const FooterMain = () => (
       <div className="footer-main-content">
         <div className="footer-main-item">
           <h3>Weekly Pick</h3>
-          <p>no products found</p>
+          <img src="../src/assets/images/solid-satin@1.5x.jpg" alt="style-guide" />
         </div>
         <div className="footer-main-item">
           <h3>Loop us in</h3>
@@ -19,7 +19,7 @@ export const FooterMain = () => (
           <h3>The Quarterly</h3>
           <p>Our newsletter is simple and brief for the hard-pressed gentleman.</p>
           <form action="#" className="email-form">
-            <input type="text" placeholder="example@example.com" />
+            <input type="email" placeholder="example@example.com" required />
             <button type="submit" className="button">SUSCRIBE ME</button>
           </form>
         </div>

@@ -34,13 +34,15 @@ export const FooterSub = () => (
       </ul>
       <div className="contact-card">
         <h2>We're here for you.</h2>
+        <div className="email-phone">
         <p>info@skinnyties.com</p>
-        <button className="button button-desktop">Contact us</button>
         <p>20154808366</p>
+        </div>
+        <button className="button button-desktop">Contact us</button>
         <button className="button button-mobile">Contact us</button>
       </div>
-      <p className="copyright">© 2019 Skinny Ties. All rights reserved. &nbsp; &nbsp; Made by Gravity Department</p>
     </div>
+    <p className="copyright">© 2019 Skinny Ties. All rights reserved. &nbsp; &nbsp; Made by <a href="#">Gravity Department</a></p>
   </div>
 </section>
 )

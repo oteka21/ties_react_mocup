@@ -8,6 +8,10 @@ import { History } from './Components/History'
 import { Footer } from './Components/Footer'
 import { tiesList } from './assets/ties-list'
 
+
+// TODO:
+// For mobile devices, search icon doesn't have any behavior, input test isn't displayed when I touch search icon button.
+
 const App = () => {
   return <div className="container">
     <Promo />
